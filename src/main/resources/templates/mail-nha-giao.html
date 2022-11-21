@@ -1,0 +1,8 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <body>
+   
+       <div>Xin chào! <span th:text="${mail.name}"/></div>
+       <div>Nhân dịp 20/11/2022 Kính chúc quý Thầy Cô <span th:text="${mail.name}"/>có được ngày Nhà giáo ....</div>
+       <img src="image-1.jpg" th:src="|cid:${image_cover}|" height="200" width="300"/>
+    </body>
+</html>

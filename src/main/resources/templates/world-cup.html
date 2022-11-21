@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title th:remove="all">Template for HTML email with inline image</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+    <p >
+      Xin Chào, <span th:text="${mail.name}" />!
+    </p>
+    <p>
+        Hòa cùng mùa World Cup, hưởng ứng mùa lễ hội lớn nhất hành tinh. Chúng tôi ưu đãi sốc giảm giá 
+     từ ngày 20-11-2022 đến ngày 10-12-2022</span>
+    </p>
+    <p>Cụ thể như:</p>
+    <ul >
+      <!-- <li th:each="hobby : ${hobbies}" th:text="${hobby}">Reading</li> -->
+      <li>Writing</li>
+      <li>Bowling</li>
+    </ul>
+    <p>
+      <img src="image-1.jpg" th:src="|cid:${image_cover}|" height="200" width="300" />
+    </p>
+    <p>
+      Regards, <br />
+      <em>The World Cup Team</em>
+    </p>
+  </body>
+</html>

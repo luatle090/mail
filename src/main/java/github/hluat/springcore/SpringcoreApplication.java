@@ -11,7 +11,7 @@ import github.hluat.springcore.services.MailTemplate;
 
 
 @SpringBootApplication
-@ConfigurationPropertiesScan("com.hluat.springcore.config")
+@ConfigurationPropertiesScan("github.hluat.springcore.config")
 public class SpringcoreApplication implements CommandLineRunner{
 	@Autowired
 	private MailTemplate mailTemplate;
